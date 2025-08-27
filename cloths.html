@@ -2,48 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- google font -->
-     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- icon cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- style -->
 
-    <!-- style -->
+  <style>
+    .carousel-img {
+      height: 400px;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+    }
 
-     <style>
-  .carousel-img {
-    height: 400px;       
-    object-fit: cover; 
-    object-position: top;  
-    width: 100%;         
-  }
-  .denims{
-    color: red;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-  
-  }
-  .imghead{
-   font-size: 40px;
-   font-family: 'Bebas Neue', cursive;
-   font-weight: 20;
-   color: rgb(255, 255, 255);
-  
-  
-  }
-</style>
+    .denims {
+      color: red;
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: aliceblue;
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+
+    .imghead {
+      font-size: 40px;
+      font-family: 'Bebas Neue', cursive;
+      font-weight: 20;
+      color: rgb(255, 255, 255);
+
+
+    }
+
+    .LOGO {
+      padding: 10PX;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+    }
+
+    .proimg {
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+
+    }
+
+    .proimg {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+
+
+    .card:hover {
+      overflow: hidden;
+      transform: scale(1.01);
+    }
+  </style>
 </head>
+
 <body>
-      <!-- Navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
     <div class="container-fluid">
+      <!-- ICON -->
+      <i class="bi bi-box-seam LOGO"></i>
+
       <a class="navbar-brand" href="#">IN-conUnsult</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,80 +115,145 @@
   </nav>
   <!-- head images -->
   <section>
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/store-1338629_1280.jpg" class=" carousel-img" alt="...">
-      <div class="carousel-caption ">
-         <p class="imghead">TOP DEALS</p>
-        <h5 class="denims">Premium Collection</h5>
-        <p>Zara,Nike,U.S Polo,Raymonds,And Many More...</p>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/wool-2742119_1280.jpg " class="carousel-img" alt="...">
-      <div class="carousel-caption ">
-        <h5 class="denims">finest wool</h5>
-        <p>Experience warmth like never before with our ultra-soft wool.</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/store-1338629_1280.jpg" class=" carousel-img" alt="...">
+          <div class="carousel-caption ">
+            <p class="imghead">TOP DEALS</p>
+            <h5 class="denims">Premium Collection</h5>
+            <p>Zara,Nike,U.S Polo,Raymonds,And Many More...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/wool-2742119_1280.jpg " class="carousel-img" alt="...">
+          <div class="carousel-caption ">
+            <h5 class="denims">finest wool</h5>
+            <p>Experience warmth like never before with our ultra-soft wool.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/jeans-428613_1280.jpg" class="carousel-img" alt="...">
+          <div class="carousel-caption ">
+            <h5 class="denims">Extra 12% Off On Denims </h5>
+            <p class="fs-5">Offers Like Never Before.</p>
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="images/jeans-428613_1280.jpg" class="carousel-img" alt="...">
-      <div class="carousel-caption ">
-        <h5 class="denims">Extra 12% Off On Denims </h5>
-        <p class="fs-5">Offers Like Never Before.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
   </section>
-<!-- grid -->
- <section class="mt-5 ">
-    <div class="container-fluid text-center ">
-  <div class="row">
-    <div class="col-sm-3 ">
-    <div class="card" style="width: 18rem; ">
-  <img src="images/city-trans-3332623_1280.jpg" class="card-img-top img-fluid" alt="...">
-  <div class="card-body bg-danger p-3">
-    <h5 class="card-title text-light">Now Shop Unlimited With Free Delivery</h5>
-    <p class="card-text text-light">We deliver comfort to your doorstep — absolutely free!</p>
-  
-  </div>
-</div>
-    </div>
-    <div class="col-sm-9">
+  <!-- grid -->
+  <section class="mt-5">
+    <div class="container-fluid text-center">
       <div class="row">
-        <div class="col-8 col-sm-6">
-          Level 2: .col-8 .col-sm-6
+        <!-- Left Card -->
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img src="images/city-trans-3332623_1280.jpg" class="card-img-top img-fluid proimg" alt="...">
+            <div class="card-body bg-danger text-light">
+              <h5 class="card-title">Now Shop Unlimited With Free Delivery</h5>
+              <p class="card-text">We deliver comfort to your doorstep — absolutely free!</p>
+            </div>
+          </div>
         </div>
-        <div class="col-4 col-sm-6">
-          Level 2: .col-4 .col-sm-6
+        <!-- Right Product Grid -->
+        <div class="col-md-9">
+          <div class="row g-3">
+            <!-- Product 1 -->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/hangers-1850082_640.jpg" class="card-img-top proimg" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Lv-Full sleeve</h5>
+                  <h2 class="card-text ">99$</h2>
+                  <span
+                    style="text-decoration: line-through; font-size: 22px ; color: red; font-style: italic; margin-right: 10px;">150$
+                  </span>
+                  <span style="background-color: rgb(55, 248, 87);">save 49$ on This</span>
+
+                </div>
+                <button type="button" class="btn btn-success">Buy</button>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/jeans-428613_1280.jpg" class="card-img-top proimg" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Levi's</h5>
+                  <h3 class="card-text">122$</h3>
+                  <span style="background-color: rgb(55, 248, 87);"> extra 10% on hdfc card's</span>
+                </div>
+                <button type="button" class="btn btn-success">Buy</button>
+              </div>
+            </div>
+            <!-- Add more products similarly -->
+            <!-- Product 2 -->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/jeans.jpg " class="card-100 img-fluid proimg" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Relax Levi's Jeans</h5>
+                  <h3 class="card-text">120$</h3>
+                  <span style="background-color: rgb(55, 248, 87);"> extra 10% on hdfc card's</span>
+                </div>
+                <button type="button" class="btn btn-success">Buy</button>
+              </div>
+            </div>
+            <!-- Add more products similarly -->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/t-shirt-9611374_1280.jpg" class="card-100 img-fluid proimg" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Plain solid white<br>US Polo Assn.</h5>
+                  <h3 class="card-text">120$</h3>
+                  <span style="background-color: rgb(55, 248, 87);"> extra 10% on hdfc card's</span>
+                </div>
+                <button type="button" class="btn btn-success">Buy</button>
+              </div>
+            </div>
+            <!-- Add more products similarly -->
+            <div class="col-sm-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/jeans shirt.jpg" class="card-100 img-fluid proimg" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">brown-long-sleeve-shirt</h5>
+                  <h3 class="card-text">69$</h3>
+                  <span style="background-color: rgb(55, 248, 87);"> extra 10% on hdfc card's</span>
+                </div>
+                <button type="button" class="btn btn-success">Buy</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
- </section>
+  </section>
 
 
   <!-- Carousel -->
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 </body>
