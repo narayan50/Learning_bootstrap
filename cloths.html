@@ -39,7 +39,6 @@
       font-weight: 20;
       color: rgb(255, 255, 255);
 
-
     }
 
     .LOGO {
@@ -62,15 +61,55 @@
       transition: transform 0.4s ease-in-out;
     }
 
-
     .card:hover {
       overflow: hidden;
       transform: scale(1.01);
     }
+    .footer-red {
+  background-color: #205fd4; /* Material red tone */
+  color: white;
+}
+
+.footer-red hr {
+  background-color: white;
+  height: 2px;
+  width: 60px;
+}
+
+.footer-red a {
+  color: white;
+}
+
+.footer-red a:hover {
+  text-decoration: underline;
+  color: #f8f9fa;
+}
+
   </style>
 </head>
 
 <body>
+  
+  <!-- modal -->
+  <section>
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
     <div class="container-fluid">
@@ -242,6 +281,18 @@
                 <button type="button" class="btn btn-success">Buy</button>
               </div>
             </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card h-100">
+                <img src="images/t-shirt-9611374_1280.jpg" class="card-100 img-fluid proimg" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Plain solid white<br>US Polo Assn.</h5>
+                  <h3 class="card-text">120$</h3>
+                  <span style="background-color: rgb(55, 248, 87);"> extra 10% on hdfc card's</span>
+                </div>
+                <button type="button" class="btn btn-success">Buy</button>
+              </div>
+            </div>
+            <!-------NEXT COL-->
           </div>
         </div>
       </div>
@@ -249,9 +300,29 @@
   </section>
 
 
+
   <!-- Carousel -->
+<footer class="footer-red text-white pt-4 pb-3 mt-5">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <h6 class="text-uppercase fw-bold">IN-conUnsult</h6>
+        <hr class="mb-2 mt-0 d-inline-block mx-auto" />
+        <p>Your one-stop shop for premium clothing brands and stylish wear.</p>
+      </div>
 
-
+      <!-- Useful links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Quick Links</h6>
+        <hr class="mb-2 mt-0 d-inline-block mx-auto" />
+        <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="ourservices.html" class="text-white text-decoration-none">Our Services</a></p>
+        <p><a href="contactus.html" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
